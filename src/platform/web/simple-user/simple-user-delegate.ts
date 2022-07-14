@@ -1,3 +1,5 @@
+import { NameAddrHeader } from "../../../grammar";
+
 /**
  * Delegate for {@link SimpleUser}.
  * @public
