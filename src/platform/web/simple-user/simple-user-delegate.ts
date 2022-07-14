@@ -23,7 +23,7 @@ export interface SimpleUserDelegate {
    * Callback for handling incoming INVITE requests.
    * The callback must either accept or reject the incoming call by calling `answer()` or `decline()` respectively.
    */
-  onCallReceived?(invitation: {remoteIdentity: NameAddrHeader}): void;
+  onCallReceived?(invitation: { remoteIdentity: NameAddrHeader }): void;
 
   /**
    * Called when a call is hung up.
