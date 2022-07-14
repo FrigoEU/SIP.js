@@ -170,7 +170,9 @@ export class SimpleUser {
 
         // Delegate
         if (this.delegate && this.delegate.onCallReceived) {
-          this.delegate.onCallReceived();
+          this.delegate.onCallReceived({
+            remoteIdentity: invitation.remoteIdentity
+          });
         } else {
           this.logger.warn(`[${this.id}] No handler available, rejecting INVITE...`);
           invitation
